@@ -1,12 +1,24 @@
-import React from 'react'
-import HomePage from './HomePage/page'
+import AboutUs from "@/app/Components/aboutus";
+import FoodCategory from "@/app/Components/foodcategoury";
+import HeroSection from "@/app/Components/herosection";
+import MeetOurChef from "@/app/Components/meetourchef";
+import Menu from "@/app/Components/menu";
+import StatsSection from "@/app/Components/statesection";
+import Testimonial from "@/app/Components/testimonial";
+import WhyChooseUs from "@/app/Components/whychooseus";
 
-const Home = () => {
-  return (
+export default function Home() {
+   return(
     <div>
-    <HomePage />
-    </div>
-  )
+      
+      <HeroSection/>
+      <AboutUs/>
+      <FoodCategory/>
+      <WhyChooseUs/>
+      <StatsSection/>
+      <Menu/>
+      <MeetOurChef/>
+      <Testimonial/>
+      </div>
+   )
 }
-
-export default Home
